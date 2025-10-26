@@ -10,13 +10,13 @@ Named after a Spanish espresso drink which is considered balanced, efficient, an
 A productivity and note-taking app for Grade 9 Pisay scholars. It is designed to make your academic experience organized and clean throughout the School Year.
 
 **Logo Design Concept:**
-
+Hand-drawn, however it will contain a coffee in the middle with a light yellow circle behind it. Moreoever, the handle of the cup will be a pair of headphones to give the vibe of relaxation and peace.
 
 # Website Outline:
 This is the vision for our project: [Design](https://www.canva.com/design/DAG23alL040/XPYQeaERsiuzZ8fUottObQ/edit)
 
 ## Sign-in Page
-* The webpage's background will have a **linear gradient** blending the colors of #997aaF and #ffcece. It will also contain **animated twinkling stars.** The stars will also contian a JavaScript code.
+* The webpage's background will have a **linear gradient** blending the colors of #997aaF and #ffcece. It will also contain **animated twinkling stars.** The stars will also contian a JavaScript code. Moreover, the background will be moving **diagonally**.
 ```
 body{
     margin:0;
@@ -93,7 +93,7 @@ body{
 * Tabs: Dashboard, Subjects (limited to Grade 9), Calendar, Active Recall, Settings (Theme Toggle, Account, etc.). Some of these will require JavaScript.
 #### On the left:
 2. TO-DO LIST
-* For the user to keep track of their progress. It will also contain a progress bar which will contain another JavaScript code
+* For the user to keep track of their progress. It will also contain a progress bar which will contain another JavaScript code.
 ```
 let progress=0;
 
@@ -105,13 +105,23 @@ function(increaseProgress){
 }
 ```
 3. LINKS TO OTHER WEBSITES
-* Located below the to-do list, the icons for each link will be **drawn** to fit the theme of our website. Once the user clicks on one app, they will be redirected to that website.
+* Located below the to-do list, the icons for each link will be **drawn** to fit the theme of our website. Once the user clicks on one app, they will be redirected to that website. The active recall link will also be in here
 
 #### In the Middle:
 4. WHITEBOARD
-* Once the user clicks on the whiteboard, it will **expand**, covering the entire website which enables the user to **take notes**, **draw**, etc.
+* Once the user clicks on the whiteboard, it will **expand**, covering the entire website which enables the user to **type their notes**. JavaScript will be used for this portion especially since we need to click it to expand or exit fullscreen.
 
 5. CALENDAR
-* Sitting right below the whiteboard, 
-. SPOTIFY AREA
-* Includes a playlist of 3 (or more) different genres to choose from. It helps the user set the vibe for effective working.
+* Sitting right below the whiteboard, you have a **calendar** where you can put your **tasks** and plan **deadlines**. Will also use JavaScript to add events/dates, colorcode them, etc.
+
+6. NOTES AREA
+* Card grid layout for each subject in Pisay.
+* Once clicked, the user will need to fill up the subject's name before making the card. After, there will be a **whiteboard to the side** (can be expanded), **calculator**, **to-do list**, etc. The user will have to click a button to open the calculator and to-do list. JavaScript will be applied to this portion as well.
+
+#### On the Right:
+7. SPOTIFY AREA
+* Includes a **playlist of 3 (or more)** different genres to choose from. It helps the user set the vibe for effective working. Will contain only a few songs. Since we will choose the vibe/genre, JavaScript will be used to switch from one playlist to another.
+8. REMINDERS
+* It is located beside the calendar to remind you of what will happen the **next day**. Another JavaScript code will be used for this..... 😭.
+9. DIGITAL CLOCK
+* Can we used to track **real world times, countdowns, or as a Pomodoro Timer** towards a specific date with an **alarm**. JavaScript will be incorporated here.
