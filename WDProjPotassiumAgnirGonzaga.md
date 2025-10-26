@@ -125,3 +125,5 @@ function(increaseProgress){
 * It is located beside the calendar to remind you of what will happen the **next day**. Another JavaScript code will be used for this..... 😭.
 9. DIGITAL CLOCK
 * Can we used to track **real world times, countdowns, or as a Pomodoro Timer** towards a specific date with an **alarm**. JavaScript will be incorporated here.
+
+Basically the Main Page will have a layout of three columns, a hovering navigation bar on the left, and a twinkling animation.
