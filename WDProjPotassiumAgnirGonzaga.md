@@ -16,7 +16,7 @@ Hand-drawn, however it will contain a coffee in the middle with a light yellow c
 This is the vision for our project: [Design](https://www.canva.com/design/DAG23alL040/XPYQeaERsiuzZ8fUottObQ/edit)
 
 ## Sign-in Page
-* The webpage's background will have a **linear gradient** blending the colors of #997aaF and #ffcece. It will also contain **animated twinkling stars.** The stars will also contian a JavaScript code. Moreover, the background will be moving **diagonally**.
+* The webpage's background will have a **linear gradient** blending the colors of #7a5196 and #f89cc8. It will also contain **animated twinkling stars.** The stars will also contian a JavaScript code. Moreover, the background will be moving **diagonally**.
 ```
 body{
     margin:0;
