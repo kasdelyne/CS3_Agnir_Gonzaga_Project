@@ -280,3 +280,8 @@ function upProgress(){
 * Calculator - Once clicked, it will redirect you to a **scientific calculator webpage** so the user can input their values and calculate them easily. JavaScript will be incorporated in here
 
 * Games - Includes **minigames** so the user can play a few games while resting. These two minigames are the **Dress-Up Game** which allows you to dress up Pompompurin :D (everything there will be handdrawn) and **Coffee-Maker Game** where you combine different substances to form a delicious, heavenly, strong drink--perfect if you're craving for coffee but do not know what to order! JavaScript will be used in both minigames.
+
+## Settings
+* Will have a moving background similar to Naj's Bonus task.
+* Will contain the following: Theme Toggle, Sound, Study Timer, Reset All
+* All of these will require JavaScript to do.
