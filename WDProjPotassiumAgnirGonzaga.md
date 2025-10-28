@@ -14,7 +14,7 @@ Will have an astronaut that looks like it's "floating" in the air while reading 
 # Website Outline:
 This is the vision for our project: [DA VISION: Design of the Project](https://www.canva.com/design/DAG23alL040/XPYQeaERsiuzZ8fUottObQ/edit)
 
-## Welcome Page
+## Welcome Page (1 Webpage)
 * Design will have twinkling stars as its background.
 * Includes a link for **About Website and the Creators**.
 * User will have to input their **nickname** to continue. If left blank, the 'Proceed' button will seemingly **run away** whihc prevents the user from clicking it until they have filled up the required information. This portion will require JavaScript.
@@ -100,7 +100,7 @@ btn.addEventListener('click', () => {
 </script>
 ```
 
-## About the Website and Developers !
+## About the Website and Developers ! (1 Webpage)
 * Will purely be made of **CSS and HTML**. It will contain the **description of the app** and at the bottom, an **"About Us!"** portion. Something fun we would like to incorporate is that when the cursor hovers on those elements, it will expand horizontally and display additional information (e.g. contact info, school, etc.)!
 
 HTML + CSS
@@ -243,7 +243,7 @@ HTML + CSS
 </body>
 ```
 
-## Main Page
+## Main Page (1 Webpage)
 * Will be divided into three columns.
 * Similar background to the 'Welcome Page', along with the twinkling stars wherein JavaScript will be applied.
 
@@ -270,7 +270,7 @@ function upProgress(){
 ### Right Side
 * Will contain an spotify playlists for each genre the user chooses. JavaScript will be used for this portion of the website.
 
-## Navigation Bar + Others
+## Navigation Bar + Others (Contains 4 Webpages)
 * Dashboard - Will redirect you to the **main page.**
 
 * Calendar - Will lead you to a **more expanded version** of your calendar.
@@ -281,7 +281,7 @@ function upProgress(){
 
 * Games - Includes **minigames** so the user can play a few games while resting. These two minigames are the **Dress-Up Game** which allows you to dress up Pompompurin :D (everything there will be handdrawn) and **Coffee-Maker Game** where you combine different substances to form a delicious, heavenly, strong drink--perfect if you're craving for coffee but do not know what to order! JavaScript will be used in both minigames.
 
-## Settings
+## Settings (Has 1 Webpage)
 * Will have a moving background similar to Naj's Bonus task.
 * Will contain the following: Theme Toggle, Sound, Study Timer, Reset All
 * All of these will require JavaScript to do.
