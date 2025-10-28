@@ -246,7 +246,7 @@ HTML + CSS
 ## Main Page (1 Webpage)
 * Will be divided into three columns.
 * Similar background to the 'Welcome Page', along with the twinkling stars wherein JavaScript will be applied.
-
+* (Optional) We might change the cursor ui!
 ### Left Side
 * Will contain a to-do list and a progress bar. The progress bar will contain JavaScript.
 
