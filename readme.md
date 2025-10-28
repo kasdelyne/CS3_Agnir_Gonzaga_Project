@@ -285,3 +285,12 @@ function upProgress(){
 * Will have a moving background similar to Naj's Bonus task.
 * Will contain the following: Theme Toggle, Sound, Study Timer, Reset All
 * All of these will require JavaScript to do.
+
+# References
+* Code Instinct. (2022, June 13). Glowing Text Animation using HTML and CSS   TUTORIAL [Video]. YouTube. https://www.youtube.com/watch?v=2xq5tQwQ0fU
+* Coding2GO. (2024, July 22). Learn CSS border animations in 6 * minutes [Video]. YouTube. https://www.youtube.com/watch?v=ezP4kbOvs_E
+* CSSnippets. (2024, October 22). 🔥 Create stunning CSS Border animations in 5 minutes! [Part 1] [Video]. YouTube. https://www.youtube.com/watch?v=XeOtvhjjHWY
+* Online Tutorials. (2020, July 10). CSS Glowing Text Hover Effects | Quick HTML CSS tutorial for Beginner [Video]. YouTube. https://www.youtube.com/watch?v=I_RhD99rR0c
+* TikTok - Make your day. (n.d.). https://vt.tiktok.com/ZSyeq1U7m/
+* TikTok - Make your day. (n.d.-b). https://vt.tiktok.com/ZSyeqF9dS/
+* TikTok - Make your day. (n.d.-c). https://vt.tiktok.com/ZSyeVofaA/
