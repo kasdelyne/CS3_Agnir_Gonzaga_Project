@@ -1,54 +1,65 @@
+INTEGRITY, EXCELLENCE, SERVICE
 > AGNIR, Kacey Adelyne &
 > GONZAGA, Germione Naj
 
 **Website Title & Browser Tab Title:**
-# cortado.io
-Named after a Spanish espresso drink which is considered balanced, efficient, and energizing. It matches the essence of productivity--focus, clarity, and getting work done without excess. 
-
+Taskonaut :O
 
 **Brief Description of the Website:**
-A productivity and note-taking app for Grade 9 Pisay scholars. It is designed to make your academic experience organized and clean throughout the School Year.
+A productivity and note-taking app for Pisay scholars. It is designed to make your academic experience organized and clean throughout the School Year.
 
 **Logo Design Concept:**
-Hand-drawn, however it will contain a coffee in the middle with a light yellow circle behind it. Moreoever, the handle of the cup will be a pair of headphones to give the vibe of relaxation and peace.
+Will have an astronaut that looks like it's "floating" in the air while reading a book with some other school supplies surrounding it!
 
 # Website Outline:
-This is the vision for our project: [Design](https://www.canva.com/design/DAG23alL040/XPYQeaERsiuzZ8fUottObQ/edit)
+This is the vision for our project: [DA VISION: Design of the Project](https://www.canva.com/design/DAG23alL040/XPYQeaERsiuzZ8fUottObQ/edit)
 
-## Sign-in Page
-* The webpage's background will have a **linear gradient** blending the colors of #997aaF and #ffcece. It will also contain **animated twinkling stars.** The stars will also contian a JavaScript code. Moreover, the background will be moving **diagonally**.
+## Welcome Page
+* Design will have twinkling stars as its background.
+* Includes a link for **About Website and the Creators**.
+* User will have to input their **nickname** to continue. If left blank, the 'Proceed' button will seemingly **run away** whihc prevents the user from clicking it until they have filled up the required information. This portion will require JavaScript.
+
+CSS Code
 ```
-body{
-    margin:0;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(180deg, #997aaf, #ffcece);
-    overflow: hidden;
-    font-family: 'Comic Sans', 'Poppins', sans-serif;
-}
-.star{
-    position: absolute;
-    background: white;
-    border-radius: 50%;
-    opacity: 0;
-    animation: twinkle 2s infinite ease-in-out;
-}
-@keyframes twinkle{
-    0%, 100%{
-        opacity: 0;
-        transform: scale(1.05);
-    } 
-    50%{
-        opacity: 1;
-        transform: scale(1);
+<style>
+    input {
+        width: 220px;
+        padding: 10px;
+        margin: 10px;
+        border: none;
+        border-radius: 8px;
+        font-size: 1em;
+        outline: none;
     }
-}
+
+    .button-container {
+        position: relative;
+        height: 70px; / Space for the button to move */
+        margin-top: 10px;
+    }
+
+    button {
+        padding: 10px 30px;
+        border: none;
+        border-radius: 8px;
+        background-color: #6a4ba3;
+        color: white;
+        font-size: 1em;
+        cursor: pointer;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        transition: background-color 0.3s ease;
+    }
+button:hover {
+        background-color: #8a6bcf;
+    }
+</style>
 ```
-* The user must complete the two input fields which are the **username** and **password**. Both fields **must** be completed for the user to log-in. 
-* If the user hovers over the **log-in** button **without filling up the username and/or password**, the button will reposition itself, as if it is **running away** from the cursor. However if both fields are filled, the button will remain staitionary and clickable. This is one of the times where JavaScript will be incorporated.
+
+JavaScript code
 ```
+<script>
     const numStars = 60;
     for (let i = 0; i < numStars; i++) {
         const star = document.createElement('div');
@@ -59,8 +70,8 @@ body{
         star.style.animationDelay = Math.random() * 2 + 's';
         document.body.appendChild(star);
     }
-```
-```
+
+    // Button runaway behavior (below inputs only)
     const btn = document.getElementById('loginBtn');
     const username = document.getElementById('username');
     const password = document.getElementById('password');
@@ -72,58 +83,200 @@ body{
             const btnWidth = btn.offsetWidth;
             const btnHeight = btn.offsetHeight;
 
+            // Move only within the button container area
             const x = Math.random() * (containerRect.width - btnWidth);
             const y = Math.random() * (containerRect.height - btnHeight);
 
-            btn.style.left = `${x}px`;
-            btn.style.top = `${y}px`;
+            btn.style.left = ${x}px;
+            btn.style.top = ${y}px;
             btn.style.transform = 'none';
         }
     });
-
-    btn.addEventListener('click', () => {
+btn.addEventListener('click', () => {
         if (username.value.trim() && password.value.trim()) {
-            alert(`Welcome, ${username.value}!`);
+            alert(Welcome, ${username.value}!);
         }
     });
+</script>
 ```
-## Home/Main Page
-1. NAVIGATION BAR   
-* The side will contain a **navigation bar** on the **left side** and **on top** for **mobile**.
-* Tabs: Dashboard, Subjects (limited to Grade 9), Calendar, Active Recall, Settings (Theme Toggle, Account, etc.). Some of these will require JavaScript.
-#### On the left:
-2. TO-DO LIST
-* For the user to keep track of their progress. It will also contain a progress bar which will contain another JavaScript code.
+
+## About the Website and Developers !
+* Will purely be made of **CSS and HTML**. It will contain the **description of the app** and at the bottom, an **"About Us!"** portion. Something fun we would like to incorporate is that when the cursor hovers on those elements, it will expand horizontally and display additional information (e.g. contact info, school, etc.)!
+
+HTML + CSS
+```
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+    }
+
+    body {
+        background: ' ';
+        color: #ffeab3;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 100vh;
+    }
+
+    header {
+        text-align: center;
+        padding: 60px 20px;
+    }
+
+    header h1 {
+        font-size: 3em;
+        color: #ffeab3;
+    }
+
+    header p {
+        font-size: 1.2em;
+        margin-top: 15px;
+        color: #ffeab3;
+        max-width: 600px;
+    }
+
+    .about-section {
+        margin-top: 60px;
+        width: 90%;
+        max-width: 900px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 60px;
+    }
+
+    .about-title {
+        font-size: 2em;
+        font-weight: bold;
+        text-align: center;
+        color: #ffeab3;
+        margin-bottom: 30px;
+    }
+
+    .card-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+        width: 100%;
+    }
+
+    .about-card {
+        background: white;
+        border-radius: 10px;
+        transition: all 0.4s ease;
+        width: 250px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        font-size: 1.1em;
+        font-weight: 500;
+        box-shadow: 0 4px 8px rgba(230, 121, 121, 0.96);
+        cursor: pointer;
+        overflow: hidden;
+    }
+
+    .about-card:hover {
+        width: 350px;
+        background: #f8f9fa;
+    }
+
+    .extra {
+        max-height: 0;
+        opacity: 0;
+        overflow: hidden;
+        transition: all 0.4s ease;
+        font-size: 0.95em;
+        color: #ffeab3;
+        margin-top: 10px;
+    }
+
+    .about-card:hover .extra {
+        max-height: 200px;
+        opacity: 1;
+    }
+
+    @media (max-width: 600px) {
+        .about-card {
+            width: 100%;
+        }
+        .about-card:hover {
+            width: 100%;
+        }
+    }
+</style>
+</head>
+<body>
+<h1> what's taskonaut about?!</h1>
+<p>A productivity and note-taking app for Pisay scholars. It is designed to make your academic experience organized and clean throughout the School Year.</p>
+
+<section class="about-section">
+    <div class="about-title> About the Developers </div>
+
+    <div class="card-container">
+    <div class="about-card">
+        <span> Kas Agnir </span>
+        <div class="extra">
+            Name: AGNIR, Kacey Adelyne O.
+            Class No.: K02
+            School: Philippine Science High School
+            Email: b2029kaoagnir@pshs.edu.ph
+        </div>
+    </div>
+
+    <div class="about-card">
+        <span> Naj Gonzaga </span>
+        <div class="extra">
+            Name: GONZAGA, Germione Naj
+            Class No.: K15
+            School: Philippine Science High School
+            Email: b2029gnggonzaga@pshs.edu.ph
+        </div>
+    </div>
+    </div>
+</section>
+</body>
+```
+
+## Main Page
+* Will be divided into three columns.
+* Similar background to the 'Welcome Page', along with the twinkling stars wherein JavaScript will be applied.
+
+### Left Side
+* Will contain a to-do list and a progress bar. The progress bar will contain JavaScript.
+
+JavaScript code
 ```
 let progress=0;
 
-function(increaseProgress){
-    if(progress<100){
+function upProgress(){
+    if (progress < 100 ){
         progress+=10;
-        document.getElementById('progress-bar').style.width=progress + '%';
+        document.getElementbyId('progress-bar').style.width=progress+"%";
     }
 }
 ```
-3. LINKS TO OTHER WEBSITES
-* Located below the to-do list, the icons for each link will be **drawn** to fit the theme of our website. Once the user clicks on one app, they will be redirected to that website. The active recall link will also be in here
 
-#### In the Middle:
-4. WHITEBOARD
-* Once the user clicks on the whiteboard, it will **expand**, covering the entire website which enables the user to **type their notes**. JavaScript will be used for this portion especially since we need to click it to expand or exit fullscreen.
 
-5. CALENDAR
-* Sitting right below the whiteboard, you have a **calendar** where you can put your **tasks** and plan **deadlines**. Will also use JavaScript to add events/dates, colorcode them, etc.
+### Middle Side
+* Will contain an **expandable whiteboard** which will be done by using another JavaScript code.
+* Below the whiteboard will be a **calendar** where you can add your tasks and track those deadlines that you do NOT want to miss. If time permits, we would like to add a **color-coding** to determine if that task is a test, requirement, homework, AA, etc. which will require JavaScript.
 
-6. NOTES AREA
-* Card grid layout for each subject in Pisay.
-* Once clicked, the user will need to fill up the subject's name before making the card. After, there will be a **whiteboard to the side** (can be expanded), **calculator**, **to-do list**, etc. The user will have to click a button to open the calculator and to-do list. JavaScript will be applied to this portion as well.
+### Right Side
+* Will contain an spotify playlists for each genre the user chooses. JavaScript will be used for this portion of the website.
 
-#### On the Right:
-7. SPOTIFY AREA
-* Includes a **playlist of 3 (or more)** different genres to choose from. It helps the user set the vibe for effective working. Will contain only a few songs. Since we will choose the vibe/genre, JavaScript will be used to switch from one playlist to another.
-8. REMINDERS
-* It is located beside the calendar to remind you of what will happen the **next day**. Another JavaScript code will be used for this..... 😭.
-9. DIGITAL CLOCK
-* Can we used to track **real world times, countdowns, or as a Pomodoro Timer** towards a specific date with an **alarm**. JavaScript will be incorporated here.
+## Navigation Bar + Others
+* Dashboard - Will redirect you to the **main page.**
 
-Basically the Main Page will have a layout of three columns, a hovering navigation bar on the left, and a twinkling animation.
+* Calendar - Will lead you to a **more expanded version** of your calendar.
+
+* Active Recall - Allows the user to be redirected into a webpage to input **questions/answers** in the cards and will **quiz** them on it. It will somewhat follow the format of this website: https://activerecall.com/.
+
+* Calculator - Once clicked, it will redirect you to a **scientific calculator webpage** so the user can input their values and calculate them easily. JavaScript will be incorporated in here
+
+* Games - Includes **minigames** so the user can play a few games while resting. These two minigames are the **Dress-Up Game** which allows you to dress up Pompompurin :D (everything there will be handdrawn) and **Coffee-Maker Game** where you combine different substances to form a delicious, heavenly, strong drink--perfect if you're craving for coffee but do not know what to order! JavaScript will be used in both minigames.
